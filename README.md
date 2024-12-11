@@ -5,7 +5,7 @@ With the project “**RECOMMEND SYSTEM**”, The goal here is to understand how 
 # (Phase 1): Extract - Transform - Load (ETL) 
 ![image](https://github.com/user-attachments/assets/fea2986f-cb09-4555-bf89-28dba5949a44)
 
-**ETL Project and Data Search Application** we will get data from the largest job website in Vietnam: https://www.vietnamworks.com/
+**RECOMMEND SYSTEM** we will get data from the largest job website in Vietnam: https://www.vietnamworks.com/
 ## Extraction Data:
 - I accessed each link of each job on the website:
   + Then went to each link and got the detailed information of each job
@@ -81,8 +81,9 @@ With the project “**RECOMMEND SYSTEM**”, The goal here is to understand how 
   + Then we will put data into
 - The work to be performed is specified in the `DatabaseManager()` class in the `ETL_to_Database.ipynb` file.
 # (Phase 2): Build Web App
-![image](https://github.com/user-attachments/assets/b7ff6bb6-8f70-473e-8000-b674f43ed01a)
+![image](https://github.com/user-attachments/assets/50981f8f-5ef0-4f9a-9152-1e15b1daca24)
 
+- With the recommendation system, when you are searching or viewing a job, that job will return tags, then here the system will search for jobs with tags similar to the job you are viewing.
 For Web App I will use Streamlit, a framework that allows running App with localhost address
 - I connect to Database and create & present my website.
 - Next is the part of creating function `recommend()`  and setting up the result display `paginate_dataframe()` function.
